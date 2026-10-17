@@ -1,11 +1,11 @@
 
-
 import sys
 
 def main():
     """Check whether the given integer is even or odd."""
     try:
-        assert len(sys.argv) <= 2, "more than one argument is provided"
+        assert len(sys.argv) <= 2, \
+            "more than one argument is provided"
 
         if len(sys.argv) == 1:
             return

@@ -1,12 +1,14 @@
 
 from typing import Any
 
+
 def NULL_not_found(object: Any) -> int:
+    """Identify and print null-like values."""
 
     if object is None:
         print(f"Nothing: {object} {type(object)}")
 
-    elif isinstance(object, float) and object != object:  # Check for NaN
+    elif isinstance(object, float) and object != object:
         print(f"Cheese: {object} {type(object)}")
 
     elif isinstance(object, bool) and object is False:
